@@ -11,6 +11,16 @@ export default function Portfolio() {
     <main className="min-h-screen bg-background">
       <div className="container mx-auto max-w-4xl px-4 py-8">
         <HeroLayoutStatic personal={portfolioData.personal} />
+        {portfolioData.customSections && portfolioData.customSections.find(s => s.id === "002abe30-2070-459c-b1af-62e62976986e") && (() => {
+          const section = portfolioData.customSections.find(s => s.id === "002abe30-2070-459c-b1af-62e62976986e")
+          const layoutMap: { [key: string]: any } = {
+            'card': CustomSectionCardStatic,
+            'list': CustomSectionListStatic,
+            'timeline': CustomSectionTimelineStatic
+          }
+          const LayoutComponent = layoutMap[section!.layout_type] || CustomSectionCardStatic
+          return <LayoutComponent section={section} />
+        })()}
         {portfolioData.education && <CustomSectionCardStatic section={{
           section_name: "Education",
           layout_type: "card",

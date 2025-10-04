@@ -33,6 +33,7 @@
   },
   "sectionOrder": [
     "personal",
+    "002abe30-2070-459c-b1af-62e62976986e",
     "education",
     "experience",
     "projects",
@@ -271,6 +272,27 @@
       "description": "Relevant Coursework:\nData Structures, Algorithms, Operating Systems, Databases, Machine Learning, Software Engineering.",
       "logoUrl": null,
       "custom_links": []
+    }
+  ],
+  "customSections": [
+    {
+      "id": "002abe30-2070-459c-b1af-62e62976986e",
+      "section_name": "rewrwerwe",
+      "layout_type": "list",
+      "items": [
+        {
+          "location": "CA",
+          "description": "tewt**tewtte**",
+          "logoUrl": null,
+          "customLinks": [
+            {
+              "icon": "website",
+              "title": "rewr",
+              "url": "tewtwe"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
